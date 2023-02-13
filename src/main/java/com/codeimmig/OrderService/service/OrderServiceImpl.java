@@ -40,6 +40,7 @@ public class OrderServiceImpl implements OrderService {
         log.info("Placing Order Request: {}", orderRequest);
         productService.reduceQuantity(orderRequest.getProductId(), orderRequest.getQuantity());
         log.info("Creating Order with status created");
+
         Order order = Order.builder()
                 .amount(orderRequest.getTotalAmount())
                 .orderStatus("CTREATED")
@@ -70,7 +71,9 @@ public class OrderServiceImpl implements OrderService {
         orderRepository.save(order);
 
         log.info("Order place successfull with orderId :{}", order.getId());
+        log.info("Ending the task execution of oder service");
         return order.getId();
+
     }
 
     @Override

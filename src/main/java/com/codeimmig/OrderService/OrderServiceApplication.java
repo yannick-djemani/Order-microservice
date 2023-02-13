@@ -1,5 +1,7 @@
 package com.codeimmig.OrderService;
 
+//import com.codeimmig.OrderService.external.intercept.ResTemplateInterceptor;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
@@ -27,7 +29,8 @@ public class OrderServiceApplication {
 //        RestTemplate restTemplate = new RestTemplate();
 //        restTemplate.setInterceptors(Arrays.asList(new ResTemplateInterceptor(
 //                clientManager(clientRegistrationRepository, oAuth2AuthorizedClientRepository))));
-        return new RestTemplate();
+//        return restTemplate;
+        return  new RestTemplate();
     }
 
 //    @Bean

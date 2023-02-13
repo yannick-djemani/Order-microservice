@@ -1,5 +1,12 @@
-package com.codeimmig.OrderService.external.intercept;
-
+//package com.codeimmig.OrderService.external.intercept;
+//
+//import feign.RequestInterceptor;
+//import feign.RequestTemplate;
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.context.annotation.Configuration;
+//import org.springframework.security.oauth2.client.OAuth2AuthorizeRequest;
+//import org.springframework.security.oauth2.client.OAuth2AuthorizedClientManager;
+//
 //@Configuration
 //public class OAuthRequestInterceptor implements RequestInterceptor {
 //    @Autowired

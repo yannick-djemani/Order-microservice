@@ -1,5 +1,14 @@
-package com.codeimmig.OrderService.external.intercept;
-
+//package com.codeimmig.OrderService.external.intercept;
+//
+//import org.springframework.http.HttpRequest;
+//import org.springframework.http.client.ClientHttpRequestExecution;
+//import org.springframework.http.client.ClientHttpRequestInterceptor;
+//import org.springframework.http.client.ClientHttpResponse;
+//import org.springframework.security.oauth2.client.OAuth2AuthorizeRequest;
+//import org.springframework.security.oauth2.client.OAuth2AuthorizedClientManager;
+//
+//import java.io.IOException;
+//
 //public class ResTemplateInterceptor  implements ClientHttpRequestInterceptor {
 //    private OAuth2AuthorizedClientManager auth2AuthorizedClientManager;
 //
@@ -8,7 +17,7 @@ package com.codeimmig.OrderService.external.intercept;
 //    }
 //
 //    @Override
-//    public ClientHttpResponse intercept(HttpRequest request, byte[] body, ClientHttpRequestExecution execution) throws IOException {
+//    public ClientHttpResponse intercept(HttpRequest request, byte[] body, ClientHttpRequestExecution execution) throws IOException, IOException {
 //        request.getHeaders().add("Authorization", "Bearer "+auth2AuthorizedClientManager
 //                .authorize(OAuth2AuthorizeRequest
 //                        .withClientRegistrationId("internal-client")
