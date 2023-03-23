@@ -43,7 +43,7 @@ public class OrderServiceImpl implements OrderService {
 
         Order order = Order.builder()
                 .amount(orderRequest.getTotalAmount())
-                .orderStatus("CTREATED")
+                .orderStatus("CREATED")
                 .productId(orderRequest.getProductId())
                 .orderDate(Instant.now())
                 .quantity(orderRequest.getQuantity())
