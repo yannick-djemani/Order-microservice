@@ -24,7 +24,7 @@ public class TestServiceInstanceListSupplier implements ServiceInstanceListSuppl
                 "PAYMENT-SERVICE",
                 "PAYMENT-SERVICE",
                 "localhost",
-                8080,
+                8086,
                 false
         ));
 
@@ -32,7 +32,7 @@ public class TestServiceInstanceListSupplier implements ServiceInstanceListSuppl
                 "PRODUCT-SERVICE",
                 "PRODUCT-SERVICE",
                 "localhost",
-                8080,
+                8086,
                 false
         ));
         return Flux.just(serviceInstances);
